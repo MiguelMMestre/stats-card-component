@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --p-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --h-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: var(--very-dark-blue);
+}
+main{
+    background-color: var(--dark-desaturated-blue);
+    width: 90%;
+    max-width: 350px;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hero{
+    background-color: var(--soft-violet);
+    display: flex;
+}
+picture{
+    display: flex;
+}
+.hero img{
+    opacity: 0.35;
+}
+section{
+    padding: 2.5rem;
+}
+h1{
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+span{
+    color: var(--soft-violet);
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--p-transparent-white);
+    padding: 1rem 0;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+}
+tr{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 0;
+}
+th{
+    width: 100%;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+td{
+    width: 100%;
+    color: var(--p-transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+@media (min-width: 600px){
+    main{
+        display: flex;
+        text-align: start;
+        max-width: 985px;
+    }
+    .hero{
+        flex-basis: 55%;
+        order: 2;
+    }
+    section{
+        flex-basis: 45%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    p{
+        padding-bottom: 3rem;
+    }
+    table{
+        width: 100%;
+        text-align: center;
+    }
+    tbody{
+        display: flex;
+        justify-content: space-between;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .title{
+        font-size: 4vmin;
+    }
+    .text{
+        font-size: 2vmin;
+    }
+}
